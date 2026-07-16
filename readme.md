@@ -1,50 +1,39 @@
-# Variables
+# Learning Python for Ethical Hacking
 
-# Store your name, age, and favorite hacking tool in three variables, then print a sentence using all three.
-# Create variables for ip_address, port, and protocol, then print them as "Scanning 192.168.1.1 on port 80 using TCP".
-# Swap the values of two variables var_a and var_b without using a third variable.
+Daily Python practice as I build toward scripting for ethical hacking — recon automation, exploitation workflows, and general security tooling.
 
-name = "Vivek kumar mishra"
-age = 22
-hacking_tool = "I do'nt know"
+## Goal
 
-print(f"I am {name}. My age is {age}. {hacking_tool} what is like to use hacking.")
+I'm learning Python from the ground up with a security-first lens. Every concept I pick up gets applied to a security-flavored problem (port numbers, IP addresses, login attempts, file extensions, etc.) instead of generic textbook examples — so the skills transfer directly into real scripting work.
 
-ip_address = "192.168.1.1"
-port = 80
-protocol = "TCP"
+## Structure
 
-print(f"Scanning {ip_address} on port {port} using {protocol}.")
+Each folder covers one topic, with dated practice files inside.
 
-var_a = 2
-var_b = 5
-var_a, var_b = var_b, var_a
-print (f"{var_a}\n{var_b}")
+```
+learning-python-for-ethical-hacking/
+├── 01-variables-typecasting/
+├── 02-conditionals/
+├── 03-loops/
+├── 04-functions/
+└── ...
+```
 
-# 4. Take a port number as a string "443" and convert it to an integer, then check if it's greater than 1024.
-# 5. A user enters their age as text via input — convert it to int and print whether they're eligible for something (age > 18).
-# 6. Convert the float 3.99 to an int and explain out loud (or in a comment) what happens to the decimal part.
-# 7. You have "192", "168", "1", "1" as four separate strings — convert and combine them into a single IP string 
-# using string formatting (not casting to int, just realize why casting isn't needed here — trick question).
+## Progress Log
 
-port = "443"
-port2 =int(port)
-if port2 > 1024:
-    print("this is grater than 1024")
-else :
-    print("this is smaller than given port ")
+| Day | Topic | Notes |
+|-----|-------|-------|
+| 1 | Variables, type casting, user input | |
+| 2 | Arithmetic & math operators | |
+| 3 | if / elif / else, and / or | |
+| 4 | Loops (for / while) | |
 
+*(updated as I go)*
 
+## Why This Matters
 
-user = input("Enter your age: ")
-User1 = int(user)
-if User1 < 18:
-    print ("You can't drink ")
-else:
-    print("You can drink")
+This repo is my practice log, not a portfolio piece — messy, incremental, and updated daily. My finished, interview-ready security tools live in separate dedicated repos once they're built.
 
-s1 = "198"
-s2 = "168"
-s3 = "1"
-s4 = "1"
-print(f"{s1}.{s2}.{s3}.{s4}")
+## About Me
+
+Final-year BCA (Cloud Computing) student, building toward a career in cybersecurity — SOC analysis, penetration testing, and eventually founding my own AI-powered security agency.
