@@ -60,4 +60,6 @@ for porting in range(1,11):
         print(f"Port {porting}: CLOSE")
 
 # Bonus — nested loops (skip if it feels too much right now)
-# 11. Print a simple multiplication table from 1 to 5 using two nested for loops (outer loop = number, inner loop = multiplier 1–5).
+#  11. Print a simple multiplication table from 1 to 5 using two nested for loops (outer loop = number, inner loop = multiplier 1–5).
+
+

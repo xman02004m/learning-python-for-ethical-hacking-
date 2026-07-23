@@ -43,8 +43,46 @@ if User1 < 18:
 else:
     print("You can drink")
 
+f1 = 3.99
+# in this it is a float point number and I am using typecasting to convert it into float to int
+f2 = int(f1)
+print(f2)
+
 s1 = "198"
 s2 = "168"
 s3 = "1"
 s4 = "1"
 print(f"{s1}.{s2}.{s3}.{s4}")
+
+# 8. Write a script that asks the user to enter a target IP address and port, then prints 
+# "Target set: <ip>:<port>".
+# 9. Ask the user for a password, then print its length using len().
+# 10. Ask the user for two numbers (they'll come in as strings), cast them to int,
+#  and print their sum — this simulates parsing numeric input from a log file or user prompt.
+# 11. Ask the user to enter "yes" or "no" for "Do you want to start the scan?" — 
+# print a different message depending on their answer (no if/else needed yet, just print based on 
+# comparison practice... actually try it with a simple if, even before we've formally covered 
+# it, and see if you can figure out the syntax).
+
+target_ip = input("Enter the traget ip address ")
+port3 = input("Enter the port: ")
+print(f"Traget set: {target_ip}:{port3}")
+
+password = input("Enter your password: ")
+length = len(password)
+print(length)
+
+a1 = input("Enter a no. ")
+a2 = input("Enter a no. ")
+a3= int(a1)
+a4 = int(a2)
+print(a3+a4)
+
+a = input("enter yes or no for Do you want to start the scan?")
+
+if a == "yes":
+    print("start scanning")
+else:
+    print("write yes to start scanning motherfucker")
+
+

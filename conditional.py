@@ -35,6 +35,7 @@ else:
 # Multiple Conditions (and / or)
 # 4. Ask for a username and password. If username is "admin" and password is "admin123", print "Login successful". Otherwise print "Access denied".
 # 5. Ask for a port number. If it's less than 1024 or greater than 65535, print "Invalid or reserved port". Otherwise print "Valid port".
+
 username = input("Enter your username name ")
 password = input("Enter your password ")
 if username == 'admin' and password =='admin123':
@@ -42,8 +43,9 @@ if username == 'admin' and password =='admin123':
 else:
     print("Login unsuccessful")
 
+
 port = int(input("Enter a port number :- "))
-if port < 1024 and port > 65535:
+if port < 1024 or port > 65535:
     print("Invalid or reserved port ")
 else:
     print("Valid Port ")
@@ -51,9 +53,61 @@ else:
 # Nested/Chained Logic
 # 6. Ask for the number of failed login attempts. If attempts is 3 or more and it's been less than 10 minutes since the last attempt (just ask for minutes as input too), print "Account locked". Otherwise print "Login allowed".
 # 7. Ask for an IP address's first number (just the first octet, as int, e.g. from "192" type in 192). If it's 10, 172, or 192, print "Likely private IP". Otherwise print "Likely public IP".
+
+
+number = int(input("Enter the number of fail attempts "))
+time = int(input("Enter how much time since the last attempt "))
+if number >= 3 and time < 10:
+    print("Account locked ")
+else:
+    print("Login allowed")
+
+
+ip_address = int(input("Enter your IP address's first number "))
+if ip_address == 10 or ip_address == 172 or ip_address == 192:
+    print("Likely private Ip")
+else:
+    print("likely pubilc ip")
+
+
 # Practical Security Scenario
 # 8. Write a simple "firewall rule checker": ask the user for a port number. If port is 22, print "SSH - allow only from trusted IP". If port is 80 or 443, print "Web traffic - allow". If port is 3389, print "RDP - block, high risk". Otherwise print "Unknown port - flag for review".
 # 9. Ask the user to enter a file extension (like "exe", "pdf", "txt"). If it's "exe" or "bat", print "Potentially dangerous file type". Otherwise print "Likely safe file type".
+
+
+user_portnumber = int(input("Enter your port number "))
+if user_portnumber == 22:
+    print("SSH - allow only from trusted IP")
+elif user_portnumber == 80 or user_portnumber == 443:
+    print("Web traffic - allow")
+elif user_portnumber == 3389:
+    print("RDP - block, high risk")
+else:
+    print("Unknown port - flag for review")
+
+
+file_extension = input("Enter a file extension(like :- exe, bat)")
+if file_extension == "exe" or file_extension == "bat":
+    print("Potentially dangerous file type")
+else:
+    print("Likely safe file type")
+
+
 # Bonus — Logic Puzzle
 # 10. Ask for two numbers. Without using max(), write if/elif/else logic to print which one is larger, or print "Equal" if they're the same.
+
+a = int(input("Enter first number "))
+b = int(input("Enter second number "))
+
+if a < b:
+    print (b)
+elif a > b:
+    print (a)
+else:
+    print("Equal")
+
+
+
 # Try these out and send your code when ready.
+
+

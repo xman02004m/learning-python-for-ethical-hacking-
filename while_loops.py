@@ -13,6 +13,11 @@ while num >= 1:
     print(num)
     num = num - 1
 
+count = int(input("Enter a number: "))
+i = 0
+while i < count:
+    print("Scanning...")
+    i = i + 1
 
 # Loop with condition checking (this is the real use case)
 # 4. Simulate a login system: ask the user for a password in a while loop. Keep asking until they type the correct password ("admin123"). Once correct, print "Access granted".
@@ -59,5 +64,17 @@ while food != "exit":
     food = input(f"Your enter food {food}. type exit to end the program    ")
 print("bye")
 # Bonus — combining what you know
+
 # 9. Simulate a simple retry system: ask the user to enter a number between 1 and 10. If it's outside that range, keep asking again (loop) until they give a valid number, then print "Valid number: X".
-# # A tip since you said you tend to quit around here: the #1 thing that breaks people on while loops is forgetting to update the variable that controls the loop — causing an infinite loop that hangs. If your terminal freezes, that's almost always why. Don't panic — just Ctrl+C to stop it, check your loop variable, and fix it. It happens to everyone.
+num1 = 11
+while num1 >= 11:
+    num1 = int(input("Give a valid number b/w 1 to 10 "))
+print(f"Valid number{num1}")
+
+
+
+
+
+
+
+ # A tip since you said you tend to quit around here: the #1 thing that breaks people on while loops is forgetting to update the variable that controls the loop — causing an infinite loop that hangs. If your terminal freezes, that's almost always why. Don't panic — just Ctrl+C to stop it, check your loop variable, and fix it. It happens to everyone.

@@ -1,0 +1,7 @@
+
+
+Functions — organizing code into reusable blocks (def), parameters, return values. Every real script needs this.
+Lists & dictionaries in more depth — you've used lists a bit, but dictionaries ({}) are huge for security scripts (storing scan results, config data, parsed responses).
+Strings & basic regex — parsing output, extracting IPs/ports/data from text (log files, HTTP responses).
+File handling — reading wordlists, writing scan results to a file.
+Exception handling (try/except) — critical for security scripts specifically, since network calls fail constantly (timeouts, unreachable hosts) and your script shouldn't crash every time.

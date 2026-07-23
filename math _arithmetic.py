@@ -22,8 +22,7 @@ a1 = port * 45
 print(a1)
 
 print(17 // 5)
-# this operater is use for the round in output into the nearest whole interger for ex = if the output is 3.45
-# this will convert it into 3
+# "always rounds down" not "nearest."
 print(17 % 5)
 # this operater give us the reminder for ex = we div the 17 with 5 then reminder is 2 that is the 
 # output of the script
@@ -36,7 +35,7 @@ print(17 % 5)
 # output is 19 
 print(10+5*2-3/3)
 
-print((10*5)+2)
+print((10+5)*2)
 
 # **Exponents & Roots**
 # 6. Print `2 ** 10` (this is how you'd calculate max values for byte ranges — e.g. why a byte can hold 0–255).
@@ -58,11 +57,14 @@ print(b1/ (1024 ** 2))
 attempts = int(input("enter your fail number of attempts "))
 print(f"this time remain {attempts *2}")
 
-print(10000-9000+1)
+s_port = 1000
+e_port = 1010
+
+a = e_port - s_port + 1
+print(a)
 
 
 # **Bonus — Order of Operations Trap**
 # 12. Predict then verify: `2 + 3 ** 2 * 2` — what does Python actually compute first? Write your prediction as a comment before running it.
 # output is 20
 print(2+3**2*2)
-# Try these and send me your code — same as before, I'll review and flag anything off.
